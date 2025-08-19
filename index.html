@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <title>Alex Garcia | Desenvolvedor Front-end</title>
+    <meta name="description" content="Portfólio de Alex Garcia, desenvolvedor front-end e estudante de Engenharia de Software. Conheça meus projetos em HTML, CSS e JavaScript.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#inicio">Início</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button class="hamburger" aria-label="Abrir menu de navegação"><i class="ph ph-list"></i></button>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="section hero">
+
+            <div class="hero-image">
+                <img src="img/icon.jpg" alt="Alex Garcia, desenvolvedor front-end e estudante de Engenharia de Software.">
+            </div>
+            <div class="hero-text">
+                <h1><span id="typed-text"></span></h1>
+                <p>Me chamo Alex Garcia, tenho 21 anos e sou natural da Bahia. Atualmente estou no 4º semestre de engenharia de software na UNIFACS. Sou apaixonado por tecnologia e gosto de aprender cada vez mais sobre a área.</p>
+                <p class="bio">Tenho focado meus estudos no desenvolvimento web front-end, onde exploro tecnologias como HTML, CSS e JavaScript para transformar ideias em interfaces limpas e funcionais. Meu objetivo é continuar aprofundando minhas habilidades para criar soluções que resolvam problemas reais e melhorem a experiência das pessoas. No futuro, pretendo expandir minha atuação para o back-end, com a meta de me tornar um desenvolvedor full-stack e construir soluções de ponta a ponta.</p>
+                <a href="#contato" class="btn">Entre em Contato</a>
+            </div>
+            
+        </section>
+
+        <section id="habilidades" class="section">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="ph ph-file-html"></i><span>HTML5</span></div>
+                <div class="skill-card"><i class="ph ph-file-css"></i><span>CSS3</span></div>
+                <div class="skill-card"><i class="ph ph-file-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="ph ph-git-branch"></i><span>Git</span></div>
+                <div class="skill-card"><i class="ph ph-code"></i><span>VS Code</span></div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <h2>Projetos Recentes</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <img src="img/MDA.png" alt="Preview do projeto Mundo das Aves, um site informativo sobre pássaros com design claro e foco em JavaScript.">
+                    <h3>Mundo das aves</h3>
+                    <p>Aplicação de JavaScript para transformar um site estático em uma experiência dinâmica, com elementos interativos que enriquecem a navegação do usuário.</p>
+                    <a href="https://klayera7.github.io/Mundo-das-Aves/" target="_blank" class="btn-projeto">Ver Projeto <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="projeto-card">
+                    <img src="img/pyteste.png" alt="Arte conceitual para o projeto Book Insights, representando a transformação de dados de livros em gráficos e visualizações interativas.">
+                    <h3>Book Insights</h3>
+                    <p>Dashboard interativo que transforma dados brutos de livros e avaliações em insights visuais, permitindo a exploração dinâmica das informações pelo usuário.</p>
+                    <a href="https://github.com/klayera7/analise_e_visualiza-o_de_dados" target="_blank" class="btn-projeto">Ver Projeto <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="projeto-card">
+                    <img src="img/BT.png" alt="Preview da landing page do projeto Bruma Tours, um site de turismo com design moderno e imersivo.">
+                    <h3>Bruma Tours</h3>
+                    <p>Criação de uma landing page responsiva e visualmente atraente, resultando em uma presença online profissional para uma agência de turismo fictícia.</p>
+                    <a href="https://klayera7.github.io/Bruma-Tours/" target="_blank" class="btn-projeto">Ver Projeto <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Vamos Conversar?</h2>
+            <p class="contato-subtitulo">Estou disponível para novos projetos e colaborações. Envie uma mensagem!</p> <br>
+            <div class="contato-grid">
+                <div class="contato-form">
+                    <form action="https://formspree.io/f/xanbgnyb" method="POST">
+                        <input type="text" name="nome" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contato-info">
+                    <h3>Minhas Redes</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/alex-garcia-735492378/" target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+
+                        <a href="https://github.com/klayera7" target="_blank" rel="noopener noreferrer"><i class="ph ph-github-logo"></i> GitHub</a>
+
+                        <a href="https://www.instagram.com/_https.alexs/?igsh=anJ3ejBuN2ptMnR2&utm_source=qr#" target="_blank" rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 . Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
