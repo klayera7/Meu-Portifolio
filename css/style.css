@@ -149,7 +149,7 @@ h3 {
 .hero-image img {
     width: 100%;
     max-width: 350px;
-    border-radius: 50%;
+    border-radius:100%;
     box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
 }
 
@@ -159,6 +159,7 @@ h3 {
 
 .hero-text p {
     margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 
 .skills-grid {
@@ -225,6 +226,7 @@ h3 {
 
 .projeto-card p {
     margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 
 .btn-projeto {
@@ -239,6 +241,10 @@ h3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
+}
+
+.contato-subtitulo {
+    font-weight: bold;
 }
 
 .contato-form input,

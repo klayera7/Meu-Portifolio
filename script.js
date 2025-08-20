@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Desenvolvedor Front-end"
             ],
             typeSpeed: 100,
-            backSpeed: 60,
+            backSpeed: 70,
             backDelay: 2000,
             loop: true
         });
