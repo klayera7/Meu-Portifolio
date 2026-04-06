@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typedElement) {
         new Typed(typedElement, {
             strings: [
-                "Desenvolvedor Front-end",
+                "Desenvolvedor Back-End",
                 "Estudante de Engenharia de Software",
-                "Futuro Desenvolvedor Full-stack",
-                "Entusiasta de Java & Back-end"
+                "Entusiasta no Desenvolvimento Front-End"
             ],
             typeSpeed: 80,
             backSpeed: 50,
@@ -285,7 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Video Modal functionality
     const videoModal = document.getElementById('video-modal');
     const modalVideoPlayer = document.getElementById('modal-video-player');
     const videoModalClose = document.querySelector('.video-modal-close');
@@ -294,14 +292,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openVideoModal(videoSrc) {
         if (!videoSrc) {
-            return; // No video source, do nothing
+            return;
         }
         
         modalVideoPlayer.src = videoSrc;
         videoModal.classList.add('active');
         document.body.style.overflow = 'hidden';
         
-        // Auto-play the video
         modalVideoPlayer.play();
     }
 
@@ -309,7 +306,6 @@ document.addEventListener('DOMContentLoaded', () => {
         videoModal.classList.remove('active');
         document.body.style.overflow = '';
         
-        // Pause and reset video
         modalVideoPlayer.pause();
         modalVideoPlayer.currentTime = 0;
         modalVideoPlayer.src = '';
@@ -322,7 +318,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (videoSrc) {
                 openVideoModal(videoSrc);
             } else {
-                // Efeito de clique mesmo sem vídeo
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
                     this.style.transform = '';
