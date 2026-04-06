@@ -13,133 +13,429 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alex Garcia",
-    "url": "https://alexgarcia.vercel.app",
-    "jobTitle": "Desenvolvedor Front-end",
-    "sameAs": [
-    "https://www.linkedin.com/in/alex-garcia-735492378/",
-    "https://github.com/klayera7",
-    "https://www.instagram.com/_https.alexs/"
-    ]
-}
-</script>
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alex Garcia",
+        "url": "https://alexgarcia.vercel.app",
+        "jobTitle": "Desenvolvedor Front-end",
+        "sameAs": [
+            "https://www.linkedin.com/in/alex-garcia-735492378/",
+            "https://github.com/klayera7",
+            "https://www.instagram.com/_https.alexs/"
+        ]
+    }
+    </script>
 </head>
 <body>
     <div id="tsparticles"></div>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="#inicio">Início</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#formacao">Formação</a>
-            <a href="#contato">Contato</a>
+
+    <header class="header" id="header">
+        <nav class="navbar" id="navbar">
+            <a href="#inicio" class="nav-link active">Início</a>
+            <a href="#habilidades" class="nav-link">Habilidades</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#backend" class="nav-link">Backend</a>
+            <a href="#formacao" class="nav-link">Formação</a>
+            <a href="#contato" class="nav-link">Contato</a>
         </nav>
-        <button class="hamburger" aria-label="Abrir menu de navegação"><i class="ph ph-list"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação">
+            <i class="ph ph-list"></i>
+        </button>
     </header>
 
-    <main class="container">
+    <main>
         <section id="inicio" class="section hero">
-
-            <div class="hero-image">
-                <img src="img/icon.jpg " alt="Alex Garcia, desenvolvedor front-end e estudante de Engenharia de Software.">
-            </div>
-            <div class="hero-text">
-                <h1><span id="typed-text"></span></h1>
-                <p>Me chamo Alex Garcia, tenho 21 anos e sou natural da Bahia. Atualmente estou no 5º semestre de engenharia de software na UNIFACS. Sou apaixonado por tecnologia e gosto de aprender cada vez mais sobre a área.</p>
-                <p class="bio">Tenho experiência com desenvolvimento web front-end, dominando HTML, CSS e o básico de JavaScript para criar interfaces limpas, responsivas e funcionais. Atualmente, tenho direcionado meus estudos para o desenvolvimento back-end, com foco em Java, buscando entender melhor a lógica por trás das aplicações, estrutura de APIs e integração com bancos de dados. Meu objetivo é evoluir cada vez mais nessa área para construir sistemas completos e, no futuro, atuar como desenvolvedor full-stack, criando soluções de ponta a ponta que resolvam problemas reais e entreguem boas experiências aos usuários.</p>
-                <a href="#contato" class="btn">Entre em Contato</a>
-            </div>
-            
-        </section>
-
-        <section id="habilidades" class="section">
-            <h2>Minhas Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="ph ph-coffee"></i><span>Java</span></div>
-                <div class="skill-card"><i class="ph ph-file-html"></i><span>HTML5</span></div>
-                <div class="skill-card"><i class="ph ph-file-css"></i><span>CSS3</span></div>
-                <div class="skill-card"><i class="ph ph-file-js"></i><span>JavaScript</span></div>
-                <div class="skill-card"><i class="ph ph-git-branch"></i><span>Git</span></div>
-                <div class="skill-card"><i class="ph ph-code"></i><span>VS Code</span></div>
-                <div class="skill-card"><i class="ph ph-monitor"></i><span>IntelliJ</span></div>
-            </div>
-        </section>
-
-        <section id="habilidades" class="section">
-            <h2>Em aprendizado</h2>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="ph ph-database"></i><span>MySQL</span></div>
-            </div>
-        </section>
-
-        <section id="projetos" class="section">
-            <h2>Projetos Recentes</h2>
-            <div class="projetos-grid">
-                <div class="projeto-card">
-                    <img src="img/psiCF.png" alt="Captura de tela da página inicial do site da psicóloga Carolline Figueiredo.">
-                    <h3>Psicóloga Carolline Figueiredo</h3>
-                    <p>Meu primeiro projeto freelancer, onde um cliente final ficou satisfeito, e eu coloquei em prática minhas habilidades.</p>
-                    <a href="https://www.psicarollinefigueiredo.com.br/" target="_blank" class="btn-projeto">Ver Projeto<i class="ph ph-arrow-right"></i></a>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image-wrapper reveal">
+                        <div class="hero-image-ring"></div>
+                        <div class="hero-image">
+                            <img src="img/icon.jpg" alt="Alex Garcia, desenvolvedor front-end e estudante de Engenharia de Software.">
+                        </div>
+                    </div>
+                    <div class="hero-text reveal reveal-delay-1">
+                        <p class="hero-greeting">Olá, eu sou</p>
+                        <h1 class="hero-name"><span>Alex</span> Garcia</h1>
+                        <h2 class="hero-title"><span id="typed-text"></span></h2>
+                        <p class="hero-description">Me chamo Alex Garcia, tenho 22 anos e sou natural da Bahia. Atualmente estou no 5º semestre de engenharia de software na UNIFACS. Sou apaixonado por tecnologia e gosto de aprender cada vez mais sobre a área.</p>
+                        <p class="hero-bio">Tenho experiência com desenvolvimento web front-end, dominando HTML, CSS e o básico de JavaScript para criar interfaces limpas, responsivas e funcionais. Atualmente, tenho direcionado meus estudos para o desenvolvimento back-end, com foco em Java, buscando entender melhor a lógica por trás das aplicações, estrutura de APIs e integração com bancos de dados. Meu objetivo é evoluir cada vez mais nessa área para construir sistemas completos e, no futuro, atuar como desenvolvedor full-stack, criando soluções de ponta a ponta que resolvam problemas reais e entreguem boas experiências aos usuários.</p>
+                        <div class="hero-cta">
+                            <a href="#contato" class="btn btn-primary">
+                                Entre em Contato <i class="ph ph-arrow-right"></i>
+                            </a>
+                            <a href="#projetos" class="btn btn-secondary">
+                                Ver Projetos <i class="ph ph-briefcase"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title reveal">Minhas Habilidades</h2>
+                <p class="section-subtitle reveal">Tecnologias e ferramentas que domino para criar experiências digitais</p>
                 
-                <div class="projeto-card">
-                    <img src="img/simuladorImg.png" alt="Foto do inicio do meu simulador de instruções assembly">
-                    <h3>Simulador assembly</h3>
-                    <p>Projeto universitario, um simulador de instruções Assembly, feito em grupo, reforçando a pratica em versionamento de codigo.</p>
-                    <a href="https://simulador-de-instrucoes-assembly.vercel.app/" target="_blank" class="btn-projeto">Ver Projeto <i class="ph ph-arrow-right"></i></a>
+                <div class="skills-grid reveal reveal-delay-1">
+                    <div class="skill-card">
+                        <i class="ph ph-coffee"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph ph-file-html"></i>
+                        <span>HTML5</span>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <i class="ph ph-file-css"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="ph ph-file-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="ph ph-git-branch"></i>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="ph ph-database"></i>
+                        <span>MySQL</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="ph ph-leaf"></i>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="ph ph-paper-plane-tilt"></i>
+                        <span>Postman</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <i class="ph ph-code"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="ph ph-monitor"></i>
+                        <span>IntelliJ</span>
+                    </div>
+
+                    
                 </div>
 
-                <div class="projeto-card">
-                    <img src="img/MDA.png" alt="Preview do projeto Mundo das Aves, um site informativo sobre pássaros com design claro e foco em JavaScript.">
-                    <h3>Mundo das aves</h3>
-                    <p>Aplicação de JavaScript para transformar um site estático em uma experiência dinâmica, com elementos interativos que enriquecem a navegação do usuário.</p>
-                    <a href="https://klayera7.github.io/Mundo-das-Aves/" target="_blank" class="btn-projeto">Ver Projeto <i class="ph ph-arrow-right"></i></a>
+                <div class="learning-section reveal reveal-delay-2">
+                    <div style="text-align: center;">
+                        <span class="learning-badge">Em Aprendizado</span>
+                    </div>
+
+                    <div class="skills-grid" style="margin-top: 1rem;">
+
+                        <div class="skill-card">
+                            <i class="ph ph-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="ph ph-cube"></i>
+                            <span>Docker</span>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="ph ph-git-branch"></i>
+                            <span>CI/CD</span>
+                        </div>
+
+                        <div class="skill-card">
+                            <i class="ph ph-cloud"></i>
+                            <span>AWS</span>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="formacao" class="section formacao">
-            <h2>Minha Formação</h2>
-            <div class="timeline">
+        <section id="projetos" class="section projetos-section">
+            <div class="container">
+                <h2 class="section-title reveal">Projetos Recentes</h2>
+                <p class="section-subtitle reveal">Trabalhos desenvolvidos com dedicação e criatividade</p>
+                
+                <div class="projetos-grid">
+                    <article class="projeto-card reveal reveal-delay-1">
+                        <div class="projeto-image">
+                            <img src="img/psiCF.png" alt="Captura de tela da página inicial do site da psicóloga Carolline Figueiredo.">
+                            <div class="projeto-overlay">
+                                <a href="https://www.psicarollinefigueiredo.com.br/" target="_blank" rel="noopener noreferrer">
+                                    Visitar Site <i class="ph ph-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projeto-content">
+                            <span class="projeto-tag">Freelance</span>
+                            <h3>Psicóloga Carolline Figueiredo</h3>
+                            <p>Meu primeiro projeto freelancer, onde um cliente final ficou satisfeito, e eu coloquei em prática minhas habilidades.</p>
+                            <div class="projeto-techs">
+                                <span class="projeto-tech">HTML</span>
+                                <span class="projeto-tech">CSS</span>
+                                <span class="projeto-tech">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <h3>Engenharia de Software — UNIFACS</h3>
-                    <p>4º semestre (Cursando)</p>
-                </div>
+                    <article class="projeto-card reveal reveal-delay-2">
+                        <div class="projeto-image">
+                            <img src="img/simuladorImg.png" alt="Foto do inicio do meu simulador de instruções assembly">
+                            <div class="projeto-overlay">
+                                <a href="https://simulador-de-instrucoes-assembly.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    Visitar Site <i class="ph ph-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projeto-content">
+                            <span class="projeto-tag">Universitário</span>
+                            <h3>Simulador Assembly</h3>
+                            <p>Projeto universitário, um simulador de instruções Assembly, feito em grupo, reforçando a prática em versionamento de código.</p>
+                            <div class="projeto-techs">
+                                <span class="projeto-tech">JavaScript</span>
+                                <span class="projeto-tech">Git</span>
+                                <span class="projeto-tech">Trabalho em Equipe</span>
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="timeline-item">
-                    <div class="circle"></div>
-                    <h3>Programação Full Stack com IA — Infinity School</h3>
-                    <p>Início: Julho/2025 — Cursando</p>
+                    <article class="projeto-card reveal reveal-delay-3">
+                        <div class="projeto-image">
+                            <img src="img/MDA.png" alt="Preview do projeto Mundo das Aves, um site informativo sobre pássaros com design claro e foco em JavaScript.">
+                            <div class="projeto-overlay">
+                                <a href="https://klayera7.github.io/Mundo-das-Aves/" target="_blank" rel="noopener noreferrer">
+                                    Visitar Site <i class="ph ph-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projeto-content">
+                            <span class="projeto-tag">Projeto Pessoal</span>
+                            <h3>Mundo das Aves</h3>
+                            <p>Aplicação de JavaScript para transformar um site estático em uma experiência dinâmica, com elementos interativos que enriquecem a navegação do usuário.</p>
+                            <div class="projeto-techs">
+                                <span class="projeto-tech">HTML</span>
+                                <span class="projeto-tech">CSS</span>
+                                <span class="projeto-tech">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="section">
-            <h2>Vamos Conversar?</h2>
-            <p class="contato-subtitulo">Estou disponível para novos projetos e colaborações. Envie uma mensagem!</p> <br>
-            <div class="contato-grid">
-                <div class="contato-form">
-                    <form action="https://formspree.io/f/xanbgnyb" method="POST">
-                        <input type="text" name="nome" placeholder="Seu Nome" required>
-                        <input type="email" name="email" placeholder="Seu E-mail" required>
-                        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
-                        <button type="submit" class="btn">Enviar Mensagem</button>
-                    </form>
+        <section id="backend" class="section backend-section">
+            <div class="container">
+                <h2 class="section-title reveal">Projetos Backend</h2>
+                <p class="section-subtitle reveal">Explorando o universo do back-end com Java e arquitetura de sistemas</p>
+                
+                <div class="backend-intro reveal">
+                    <p>Atualmente focado em desenvolvimento back-end, estou construindo projetos que me permitem entender a lógica por trás das aplicações, estrutura de APIs RESTful e integração com bancos de dados relacionais e não relacionais.</p>
                 </div>
-                <div class="contato-info">
-                    <h3>Minhas Redes</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/alex-garcia-735492378/" target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
 
-                        <a href="https://github.com/klayera7" target="_blank" rel="noopener noreferrer"><i class="ph ph-github-logo"></i> GitHub</a>
+                <div class="backend-grid">
+                    <article class="backend-card reveal reveal-delay-1">
+                        <div class="backend-card-header">
+                            <div class="backend-card-icon">
+                                <i class="ph ph-folder"></i>
+                            </div>
+                            <h3>Smart File Organizer</h3>
+                        </div>
+                        <div class="backend-card-body">
+                            <div class="backend-problem">
+                                <h4>📄 Sobre</h4>
+                                <p>Um sistema inteligente de organização de arquivos desenvolvido em Java que monitora automaticamente uma pasta de origem e organiza os arquivos em pastas de destino baseadas em suas extensões.</p>
+                            </div>
+                            <div class="backend-stack">
+                                <h4>🛠 Stack Utilizada</h4>
+                                <div class="stack-tags">
+                                    <span class="stack-tag">Java</span>
+                                    <span class="stack-tag">Java NIO</span>
+                                    <span class="stack-tag">WatchService</span>
+                                    <span class="stack-tag">HashMap</span>
+                                    <span class="stack-tag">JSON</span>
+                                </div>
+                            </div>
+                            <div class="backend-architecture">
+                                <h4>📐 Arquitetura</h4>
+                                <div class="architecture-diagram">
+Smart File Organizer/<br><br>
+├── src/<br>
+│   ├── Main.java<br>
+│   ├── config/<br>
+│   │   └── Settings.java<br>
+│   └── utils/<br>
+│       └── FileHandler.java<br>
+└── README.md
+                                </div>
+                            </div>
+                        </div> <br><br><br><br><br><br>
+                        <div class="backend-video" data-video="videos/TESTANDO ORGANIZADOR DE PASTAS.mp4">
+                            <div class="video-placeholder">
+                                <i class="ph ph-play-circle"></i>
+                                <span>Clique para ver demonstração</span>
+                            </div>
+                        </div>
+                        <div class="backend-card-footer">
+                            <a href="https://github.com/klayera7/Smart-File-Organizer" target="_blank" rel="noopener noreferrer">
+                                <i class="ph ph-github-logo"></i> Ver Código
+                            </a>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">Finalizado</span>
+                        </div>
+                    </article>
 
-                        <a href="https://www.instagram.com/_https.alexs/?igsh=anJ3ejBuN2ptMnR2&utm_source=qr#" target="_blank" rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i> Instagram</a>
+
+                    <article class="backend-card reveal reveal-delay-2">
+                        <div class="backend-card-header">
+                            <div class="backend-card-icon">
+                                <i class="ph ph-shopping-cart"></i>
+                            </div>
+                            <h3>Sales System API</h3>
+                        </div>
+                        <div class="backend-card-body">
+                            <div class="backend-problem">
+                                <h4>📄 Sobre</h4>
+                                <p>A Sales System API é uma aplicação backend robusta que serve como base para plataformas de e-commerce. O sistema implementa as principais operações CRUD (Create, Read, Update, Delete) com tratamento de exceções personalizado, validações de integridade referencial e uma arquitetura bem estruturada seguindo as melhores práticas do Spring Boot.</p>
+                            </div>
+                            <div class="backend-stack">
+                                <h4>🛠 Stack Utilizada</h4>
+                                <div class="stack-tags">
+                                    <span class="stack-tag">Java</span>
+                                    <span class="stack-tag">Spring Boot</span>
+                                    <span class="stack-tag">JPA</span>
+                                    <span class="stack-tag">REST API</span>
+                                    <span class="stack-tag">H2</span>
+                                    <span class="stack-tag">Maven</span>
+                                    <span class="stack-tag">Jackson</span>
+                                </div>
+                            </div>
+                            <div class="backend-architecture">
+                                <h4>📐 Arquitetura</h4>
+                                <div class="architecture-diagram">
+src/main/java/com/salessystemapi/sales_system_api/<br><br>
+
+<pre>
+├── entities
+│   └── domain models + composite keys
+├── repositories
+│   └── data access (Spring Data JPA)
+├── services
+│   ├── business logic
+│   └── exception handling
+├── resources
+│   ├── REST controllers
+│   └── global exception handler
+└── config
+    └── test setup
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backend-video" data-video="">
+                            <div class="video-placeholder">
+                                <i class="ph ph-play-circle"></i>
+                                <span>Em breve</span>
+                            </div>
+                        </div>
+                        <div class="backend-card-footer">
+                            <a href="https://github.com/klayera7/sales-system-api" target="_blank" rel="noopener noreferrer">
+                                <i class="ph ph-github-logo"></i> Ver Código
+                            </a>
+                            <span style="color: var(--text-muted); font-size: 0.85rem;">Finalizado</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="section formacao-section">
+            <div class="container">
+                <h2 class="section-title reveal">Minha Formação</h2>
+                <p class="section-subtitle reveal">Trajetória acadêmica e cursos que estão moldando minha carreira</p>
+                
+                <div class="timeline reveal reveal-delay-1">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Engenharia de Software</h3>
+                            <p class="timeline-school">UNIFACS</p>
+                            <p class="timeline-period">
+                                <i class="ph ph-calendar-blank"></i>
+                                5º semestre — Cursando
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Programação Full Stack com IA</h3>
+                            <p class="timeline-school">Infinity School</p>
+                            <p class="timeline-period">
+                                <i class="ph ph-calendar-blank"></i>
+                                Início: Julho/2025 — Finalizado: Abril/2026
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section contato-section">
+            <div class="container">
+                <h2 class="section-title reveal">Vamos Conversar?</h2>
+                <p class="section-subtitle reveal">Estou disponível para novos projetos e colaborações. Envie uma mensagem!</p>
+                
+                <div class="contato-grid">
+                    <div class="contato-form reveal reveal-delay-1">
+                        <h3>Envie uma Mensagem</h3>
+                        <form action="https://formspree.io/f/xanbgnyb" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Seu Nome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Seu E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Sua Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Conte-me sobre seu projeto ou ideia..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                Enviar Mensagem <i class="ph ph-paper-plane-right"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contato-info reveal reveal-delay-2">
+                        <h3>Minhas Redes</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/alex-garcia-735492378/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="ph ph-linkedin-logo"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/klayera7" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="ph ph-github-logo"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.instagram.com/_https.alexs/?igsh=anJ3ejBuN2ptMnR2&utm_source=qr#" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="ph ph-instagram-logo"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,8 +443,21 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 . Todos os direitos reservados.</p>
+        <p>&copy; 2025 Alex Garcia. Todos os direitos reservados.</p>
     </footer>
+
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" aria-label="Fechar vídeo">
+                <i class="ph ph-x"></i>
+            </button>
+            <video id="modal-video-player" controls>
+                <source src="" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
